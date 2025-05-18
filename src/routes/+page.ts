@@ -1,5 +1,5 @@
 import type { PageLoad } from './$types';
-import data from '$lib/data/T0003.json';
+import data from '$lib/list.json';
 
 export const load: PageLoad = ({ params }) => {
     return {

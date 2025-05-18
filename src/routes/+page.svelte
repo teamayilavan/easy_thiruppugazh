@@ -1,9 +1,11 @@
 <script lang="ts">
+	import Song from '$lib/components/Song.svelte';
 	import type { PageProps } from './$types';
 	let { data }: PageProps = $props();
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-
-<p>{data.songs.data.title}</p>
+<div class="flex flex-wrap gap-4 justify-center">
+	{#each data.songs.data as song}
+	<Song song={song} />
+	{/each}
+</div>
