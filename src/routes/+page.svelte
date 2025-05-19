@@ -4,7 +4,7 @@
 	let { data }: PageProps = $props();
 </script>
 
-<div class="flex flex-wrap gap-4 justify-center">
+<div class="flex flex-wrap gap-4 justify-center py-4">
 	{#each data.songs.data as song}
 	<Song song={song} />
 	{/each}

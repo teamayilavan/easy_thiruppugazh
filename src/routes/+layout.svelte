@@ -7,7 +7,7 @@
 
 <Header />
 <main>	
-	<div class="max-w-5xl mx-auto items-center px-4">
+	<div class="max-w-4xl mx-auto items-center px-4">
 		{@render children()}
 	</div>
 </main>
