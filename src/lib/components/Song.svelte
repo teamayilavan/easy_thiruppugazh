@@ -3,7 +3,7 @@ let {song} = $props();
 </script>
 
 <a href={song.id}>
-<div class="px-4 py-2 bg-card w-56 rounded-md shadow-sm hover:bg-container">
+<div class="px-2 py-2 bg-card w-72 rounded-md shadow-sm hover:bg-container">
     <p class="font-medium noto text-text-body">{song.title}</p>
     <p class="text-sm mt-1">district</p>
     <div class="flex mt-3 gap-4">
