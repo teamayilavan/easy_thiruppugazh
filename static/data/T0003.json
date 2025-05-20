@@ -1,7 +1,6 @@
 {
     "title": "உம்பர் தரு",
     "santham": "தந்ததனத் தானதனத் தனதான",
-    "thalam":"Temple",
     "lines": [
         "உம்பர்தருத் தேனுமணிக் - கசிவாகி",
         "ஒண்கடலில் தேனமுதத் - துணர்வூறி",
@@ -14,5 +13,6 @@
     ], 
     "porul":null,
     "explanation":null,
-    "music":null
+    "music":null,
+    "thalam":"Temple"
 }
