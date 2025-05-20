@@ -1,6 +1,5 @@
 <script lang="ts">
-	import type { PageProps } from './$types';
-	let { data }: PageProps = $props();
+	let { data } = $props();
 	let song_data = data.data;
 	console.log(song_data);
 </script>
@@ -9,7 +8,7 @@
 	<title>{song_data.title} | எளிய திருப்புகழ் பாடல்கள் தொகுப்பு</title>
 	<meta
 		name="description"
-		content={`${song_data.thalam} திருத்தலத்தில் அருளப்பெற்ற பாடல் ${song_data.title}`}
+		content={`${song_data.thalam} திருத்தலத்தில் அருளப்பெற்ற திருப்புகழ் பாடல் ${song_data.title}`}
 	/>
 	<meta
 		name="keywords"
@@ -19,30 +18,30 @@
 </svelte:head>
 
 <div class="mt-4">
-	<h1 class="noto text-lg font-medium text-highlight-text">{song_data.title}</h1>
+	<h1 class="noto text-highlight-text text-lg font-medium">{song_data.title}</h1>
 </div>
-<div class="mt-4 text-text-body text-sm">
+<div class="text-text-body mt-4 text-sm">
 	<p>திருத்தலம் : {song_data.thalam}</p>
 </div>
 <div class="mt-8">
-	<p class="noto text-sm font-medium text-highlight-text">சந்தம்</p>
+	<p class="noto text-highlight-text text-sm font-medium">சந்தம்</p>
 </div>
-<div class="mt-2 text-text-body">
+<div class="text-text-body mt-2">
 	<p>{song_data.santham}</p>
 </div>
 <div class="mt-8">
-	<p class="noto text-sm font-medium text-highlight-text">வரிகள்</p>
+	<p class="noto text-highlight-text text-sm font-medium">வரிகள்</p>
 </div>
-<div class="mt-2 grid gap-1 text-text-body">
+<div class="text-text-body mt-2 grid gap-1">
 	{#each song_data.lines as line}
 		<p>{line}</p>
 	{/each}
 </div>
 
 <div class="mt-8">
-	<p class="noto text-sm font-medium text-highlight-text">இசை</p>
+	<p class="noto text-highlight-text text-sm font-medium">இசை</p>
 </div>
-<div class="mt-2 text-text-body">
+<div class="text-text-body mt-2">
 	{#if song_data.music}
 		<audio controls>
 			<source src="horse.ogg" type="audio/ogg" />
@@ -55,12 +54,11 @@
 	{/if}
 </div>
 
-
 <div class="mt-8">
-	<p class="noto text-sm font-medium text-highlight-text">பொருளுரை</p>
+	<p class="noto text-highlight-text text-sm font-medium">பொருளுரை</p>
 </div>
 
-<div class="mt-2 text-text-body">
+<div class="text-text-body mt-2">
 	{#if song_data.porul}
 		{#each song_data.porul as line}
 			<p>line</p>
@@ -70,10 +68,10 @@
 	{/if}
 </div>
 
-<div class="mt-8 ">
-	<p class="noto text-sm font-medium text-highlight-text">விளக்கவுரை</p>
+<div class="mt-8">
+	<p class="noto text-highlight-text text-sm font-medium">விளக்கவுரை</p>
 </div>
-<div class="mt-2 text-text-body">
+<div class="text-text-body mt-2">
 	{#if song_data.explanation}
 		{#each song_data.explanation as line}
 			<p>line</p>
@@ -82,4 +80,3 @@
 		<p>மன்னிக்கவும்! இந்த பாடலுக்கான விளக்கவுரை தற்போது கிடைக்க பெறவில்லை!</p>
 	{/if}
 </div>
-
