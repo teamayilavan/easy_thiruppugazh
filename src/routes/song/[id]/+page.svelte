@@ -1,7 +1,6 @@
 <script lang="ts">
 	let { data } = $props();
 	let song_data = data.data;
-	console.log(song_data);
 </script>
 
 <svelte:head>
@@ -27,13 +26,24 @@
 	<p class="noto text-highlight-text text-sm font-medium">சந்தம்</p>
 </div>
 <div class="text-text-body mt-2">
-	<p>{song_data.santham}</p>
+	{#each song_data.santham as santham_line}
+		<p>{santham_line}</p>
+	{/each}
 </div>
 <div class="mt-8">
 	<p class="noto text-highlight-text text-sm font-medium">வரிகள்</p>
 </div>
 <div class="text-text-body mt-2 grid gap-1">
-	{#each song_data.lines as line}
+	{#each song_data.lyrics as line}
+		<p>{line}</p>
+	{/each}
+</div>
+
+<div class="mt-8">
+	<p class="noto text-highlight-text text-sm font-medium">பதம் பிரித்தது</p>
+</div>
+<div class="text-text-body mt-2 grid gap-1">
+	{#each song_data.patham as line}
 		<p>{line}</p>
 	{/each}
 </div>
@@ -58,11 +68,9 @@
 	<p class="noto text-highlight-text text-sm font-medium">பொருளுரை</p>
 </div>
 
-<div class="text-text-body mt-2">
+<div class="text-text-body mt-2 leading-8 prose">
 	{#if song_data.porul}
-		{#each song_data.porul as line}
-			<p>line</p>
-		{/each}
+		<p>{song_data.porul}</p>
 	{:else}
 		<p>மன்னிக்கவும்! இந்த பாடலுக்கான பொருளுரை தற்போது கிடைக்க பெறவில்லை!</p>
 	{/if}

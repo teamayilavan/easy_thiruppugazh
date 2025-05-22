@@ -10,4 +10,8 @@ declare global {
 	}
 }
 
-export {};
+export interface SongInfo {
+	"id": string, "title": string, "place": string, "meaning": boolean, "music": boolean, "legend": boolean
+}
+
+export { };
