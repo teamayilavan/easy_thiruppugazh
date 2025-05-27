@@ -86,8 +86,8 @@
 	</div>
 
 	<a href="https://www.ayilavan.org" target="_blank">
-		<div class="w-36 p-2">
-			<img src={logo} alt="Ayilavan Logo" />
+		<div class=" p-2">
+			<img src={logo} width="144px" alt="Ayilavan Logo" />
 		</div>
 	</a>
 
