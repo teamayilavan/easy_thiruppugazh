@@ -3,11 +3,11 @@
 </script>
 
 <footer
-	class="border-highlight-text mt-12 flex flex-col items-center justify-between gap-5 border-t-1 p-4 lg:flex-row"
+	class="border-text-high mt-12 flex flex-col items-center justify-between gap-5 border-t-1 p-4 lg:flex-row mb-4"
 >
-	<div class="social text-text-gray flex gap-2">
+	<div class="social text-accent flex gap-2">
 		<a
-			class="hover:text-highlight-text"
+			class="hover:text-text-high"
 			href="https://www.youtube.com/@teamayilavan"
 			target="_blank"
 			aria-label="Youtube Link"
@@ -26,7 +26,7 @@
 			</svg>
 		</a>
 		<a
-			class="hover:text-highlight-text"
+			class="hover:text-text-high"
 			href="https://www.instagram.com/teamayilavan"
 			target="_blank"
 			aria-label="Instagram Link"
@@ -45,7 +45,7 @@
 			</svg>
 		</a>
 		<a
-			class="hover:text-highlight-text"
+			class="hover:text-text-high"
 			href="https://www.facebook.com/profile.php?id=61576495169699"
 			target="_blank"
 			aria-label="Facebook Link"
@@ -65,7 +65,7 @@
 		</a>
 
 		<a
-			class="hover:text-highlight-text"
+			class="hover:text-text-high"
 			href="https://x.com/teamayilavan"
 			target="_blank"
 			aria-label="X Link"

@@ -1,127 +1,221 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* noto-sans-tamil-100 - tamil */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Sans Tamil';
   font-style: normal;
   font-weight: 100;
-  src: url('/fonts/noto-sans-tamil-v27-tamil-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/noto-sans-tamil-v27-tamil-100.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* noto-sans-tamil-200 - tamil */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Sans Tamil';
   font-style: normal;
   font-weight: 200;
-  src: url('/fonts/noto-sans-tamil-v27-tamil-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/noto-sans-tamil-v27-tamil-200.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* noto-sans-tamil-300 - tamil */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Sans Tamil';
   font-style: normal;
   font-weight: 300;
-  src: url('/fonts/noto-sans-tamil-v27-tamil-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/noto-sans-tamil-v27-tamil-300.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* noto-sans-tamil-regular - tamil */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Sans Tamil';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/noto-sans-tamil-v27-tamil-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/noto-sans-tamil-v27-tamil-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* noto-sans-tamil-500 - tamil */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Sans Tamil';
   font-style: normal;
   font-weight: 500;
-  src: url('/fonts/noto-sans-tamil-v27-tamil-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/noto-sans-tamil-v27-tamil-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* noto-sans-tamil-600 - tamil */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Sans Tamil';
   font-style: normal;
   font-weight: 600;
-  src: url('/fonts/noto-sans-tamil-v27-tamil-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/noto-sans-tamil-v27-tamil-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* noto-sans-tamil-700 - tamil */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Sans Tamil';
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/noto-sans-tamil-v27-tamil-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/noto-sans-tamil-v27-tamil-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* noto-sans-tamil-800 - tamil */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Sans Tamil';
   font-style: normal;
   font-weight: 800;
-  src: url('/fonts/noto-sans-tamil-v27-tamil-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/noto-sans-tamil-v27-tamil-800.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* noto-sans-tamil-900 - tamil */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Sans Tamil';
   font-style: normal;
   font-weight: 900;
-  src: url('/fonts/noto-sans-tamil-v27-tamil-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/noto-sans-tamil-v27-tamil-900.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 
 /* baloo-thambi-2-regular - tamil */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Baloo Thambi 2';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/baloo-thambi-2-v17-tamil-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/baloo-thambi-2-v17-tamil-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* baloo-thambi-2-500 - tamil */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Baloo Thambi 2';
   font-style: normal;
   font-weight: 500;
-  src: url('/fonts/baloo-thambi-2-v17-tamil-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/baloo-thambi-2-v17-tamil-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* baloo-thambi-2-600 - tamil */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Baloo Thambi 2';
   font-style: normal;
   font-weight: 600;
-  src: url('/fonts/baloo-thambi-2-v17-tamil-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/baloo-thambi-2-v17-tamil-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* baloo-thambi-2-700 - tamil */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Baloo Thambi 2';
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/baloo-thambi-2-v17-tamil-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/baloo-thambi-2-v17-tamil-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* baloo-thambi-2-800 - tamil */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Baloo Thambi 2';
   font-style: normal;
   font-weight: 800;
-  src: url('/fonts/baloo-thambi-2-v17-tamil-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/baloo-thambi-2-v17-tamil-800.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fly-in {
+  animation: .6s fadeInUp;
+}
+
+
+.fade-in {
+  animation: 1s fade;
+}
+
+.baloo {
+  font-family: "Baloo Thambi 2", system-ui;
+  font-optical-sizing: auto;
+}
+
+.noto {
+  font-family: "Noto Sans Tamil", sans-serif;
+  font-optical-sizing: auto;
+}
+
 @theme {
-    --color-background: #C4E4CE;
-    --color-container: #DDF8E5;
-    --color-card: #EAFFF0;
-    --color-highlight-text: #196519;
-    --color-text-body: #0D3619;
-    --color-text-gray: #A9A9A9;
+
+  --color-background: #D8EFD3;
+  --color-container: #CAE8BD;
+  --color-card: #B3D8A8;
+  --color-text-high: #196519;
+  --color-text: #0D3619;
+  --color-text-muted: #A9A9A9;
+  --color-accent: #80AF81;
+
+
+
+  --color-dbackground: #1F4529;
+  --color-dcontainer: #255F38;
+  --color-dcard: #357943;
+  --color-dtext-high: #63b467;
+  --color-dtext: #ececec;
+  --color-dtext-muted: #A9A9A9;
+  --color-daccent: #609755;
 }
