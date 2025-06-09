@@ -93,8 +93,8 @@
 
 	<div class="copyright items-center text-center lg:text-left">
 		<p class="text-sm">&copy; 2025, Team Ayilavan</p>
-		<a href="terms"><small>Terms and Conditions</small></a>
+		<a href="/terms"><small>Terms and Conditions</small></a>
 		<span class="text-text-gray">|</span>
-		<a href="privacy"><small>Privacy Policy</small></a>
+		<a href="/privacy"><small>Privacy Policy</small></a>
 	</div>
 </footer>
