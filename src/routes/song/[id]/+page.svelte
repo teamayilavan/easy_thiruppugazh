@@ -1,5 +1,6 @@
 <script lang="ts">
-	import ShareButtons from "$lib/components/ShareButtons.svelte";
+	import ShareButtons from '$lib/components/ShareButtons.svelte';
+	import { cardImage } from '$lib/assets/OG_Card_Image.png';
 	let { data } = $props();
 	let song_data = data.data;
 </script>
@@ -15,17 +16,24 @@
 		content={`${song_data.title},${song_data.thalam}, திருப்புகழ், அருணகிரிநாத சுவாமிகள்,முருக பெருமான், வெற்றிவேல், சிறப்பு`}
 	/>
 	<meta name="author" content="அயிலவன் அணி" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content={`${song_data.title} | எளிய திருப்புகழ் பாடல்கள் தொகுப்பு`} />
+	<meta
+		property="og:description"
+		content={`${song_data.thalam} திருத்தலத்தில் அருளப்பெற்ற திருப்புகழ் பாடல் ${song_data.title}`}
+	/>
+	<meta property="og:image" content={cardImage} />
 </svelte:head>
 
-<div class="mt-12 fly-in">
+<div class="fly-in mt-12">
 	<h1 class="noto text-text-high dark:text-card text-center text-2xl font-semibold">
 		{song_data.title}
 	</h1>
 </div>
-<div class="text-text dark:text-dtext mt-4 text-center text-sm fly-in">
+<div class="text-text dark:text-dtext fly-in mt-4 text-center text-sm">
 	<p>திருத்தலம் : {song_data.thalam}</p>
 </div>
-<div class="bg-card dark:bg-dcard mt-12 rounded-xl p-4 fade-in">
+<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
 	<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">சந்தம்</p>
 
 	<div class="text-text dark:text-dtext mt-4">
@@ -34,7 +42,7 @@
 		{/each}
 	</div>
 </div>
-<div class="bg-card dark:bg-dcard mt-12 rounded-xl p-4 fade-in">
+<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
 	<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">வரிகள்</p>
 	<div class="text-text dark:text-dtext mt-4 grid gap-1">
 		{#each song_data.lyrics as line}
@@ -43,7 +51,7 @@
 	</div>
 </div>
 
-<div class="bg-card dark:bg-dcard mt-12 rounded-xl p-4 fade-in">
+<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
 	<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">பதம் பிரித்தது</p>
 	<div class="text-text dark:text-dtext mt-4 grid gap-1">
 		{#each song_data.patham as line}
@@ -52,7 +60,7 @@
 	</div>
 </div>
 
-<div class="bg-card dark:bg-dcard mt-12 rounded-xl p-4 fade-in">
+<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
 	<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">இசை</p>
 
 	<div class="text-text dark:text-dtext mt-4">
@@ -69,7 +77,7 @@
 	</div>
 </div>
 
-<div class="bg-card dark:bg-dcard mt-12 rounded-xl p-4 fade-in">
+<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
 	<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">பொருளுரை</p>
 
 	<div class="text-text dark:text-dtext mt-4 leading-8">
@@ -81,7 +89,7 @@
 	</div>
 </div>
 
-<div class="bg-card dark:bg-dcard mt-12 rounded-xl p-4 fade-in">
+<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
 	<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">விளக்கவுரை</p>
 
 	<div class="text-text dark:text-dtext mt-4">
@@ -97,9 +105,8 @@
 
 <ShareButtons />
 
-
 <a class="bg-accent hover:bg-dcard mx-auto mt-12 block w-72 rounded-md px-4 py-2" href="/">
-	<div class="flex align-middle gap-2 items-center">
+	<div class="flex items-center gap-2 align-middle">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="32"

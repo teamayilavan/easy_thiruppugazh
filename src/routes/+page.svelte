@@ -1,6 +1,8 @@
 <script lang="ts">
 	import Song from '$lib/components/Song.svelte';
-	import {fade} from 'svelte/transition';
+	import { cardImage } from '$lib/assets/OG_Card_Image.png';
+
+	import { fade } from 'svelte/transition';
 	import type { PageProps } from './$types';
 	let { data }: PageProps = $props();
 	let songs = data.data;
@@ -19,11 +21,22 @@
 		content="திருப்புகழ், அருணகிரிநாத சுவாமிகள்,முருக பெருமான், வெற்றிவேல், சிறப்பு"
 	/>
 	<meta name="author" content="அயிலவன் அணி" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="எளிய திருப்புகழ் பாடல்கள் தொகுப்பு" />
+	<meta
+		property="og:description"
+		content="சிறப்பு மிக்க திருப்புகழில் படிப்பதற்கு எளிதனா திருப்புகழ் பாடல்களை தொகுத்து இந்த
+			வலைத்தளத்தில் வழங்கியுள்ளோம். பாடல்களுக்கு பொருளுரை, விளக்கவுரை மற்றும் இசை வடிவில் எவ்வாறு
+			பாடுவது என்பன கொடுத்துள்ளோம்."
+	/>
+	<meta property="og:image" content={cardImage} />
 </svelte:head>
 
 <div class="intro mx-auto mt-12 grid max-w-3xl gap-4 text-sm md:text-xl">
-	<h1 class="noto text-center font-bold text-text-high dark:text-dtext-high fly-in text-2xl">வெற்றிவேல் முருகருக்கு அரோகரா!</h1>
-	<div class="first mt-8 fly-in">
+	<h1 class="noto text-text-high dark:text-dtext-high fly-in text-center text-2xl font-bold">
+		வெற்றிவேல் முருகருக்கு அரோகரா!
+	</h1>
+	<div class="first fly-in mt-8">
 		<p>
 			சகல செல்வமும், யோகமிக்க பெறுவாழ்வும், தகமை, சிவஞானம், முக்தி, இக பர சௌபாக்கியம், பிறவாமை இவை
 			அனைத்தும் தர வல்லது அருணகிரிநாத சுவாமிகள் அருளிசெய்த திருப்புகழ். முருக பெருமான் பெருங்கருணை
@@ -37,16 +50,18 @@
 			பாடுவது என்பன கொடுத்துள்ளோம்.
 		</p>
 	</div>
-	<div class="third noto text-center mt-12 font-bold text-xl fly-in text-text-high dark:text-dtext-high ">
+	<div
+		class="third noto fly-in text-text-high dark:text-dtext-high mt-12 text-center text-xl font-bold"
+	>
 		<p>முருகா சரணம்!</p>
 	</div>
 </div>
 
-<div class="baloo mt-8 text-center font-medium fly-in">
+<div class="baloo fly-in mt-8 text-center font-medium">
 	<p>பாடல்கள்</p>
 </div>
 <div
-	class="mx-auto mt-4 flex flex-col items-center justify-center gap-2 text-center align-middle md:flex-row md:gap-5 fly-in"
+	class="fly-in mx-auto mt-4 flex flex-col items-center justify-center gap-2 text-center align-middle md:flex-row md:gap-5"
 >
 	<div class="flex gap-1 align-middle">
 		<svg
@@ -90,8 +105,10 @@
 		<small>இசை உள்ளது</small>
 	</div>
 </div>
-<div class="mt-16 bg-container dark:bg-dcontainer  p-4 rounded-2xl fade-in">
-	<h2 class="baloo text-text-high dark:text-dtext-high text-center text-lg font-bold my-2">நான்கு வரிகள்</h2>
+<div class="bg-container dark:bg-dcontainer fade-in mt-16 rounded-2xl p-4">
+	<h2 class="baloo text-text-high dark:text-dtext-high my-2 text-center text-lg font-bold">
+		நான்கு வரிகள்
+	</h2>
 	<div class="mt-4 flex flex-wrap justify-center gap-4 py-4">
 		{#each songs.less_than_4 as song}
 			<Song {song} />
@@ -99,8 +116,8 @@
 	</div>
 </div>
 <!-- <hr class="text-text-gray" /> -->
-<div class="mt-16 bg-container dark:bg-dcontainer p-4 rounded-2xl fade-in">
-	<h2 class="baloo text-text-high dark:text-dtext-high text-center text-lg font-bold my-4">
+<div class="bg-container dark:bg-dcontainer fade-in mt-16 rounded-2xl p-4">
+	<h2 class="baloo text-text-high dark:text-dtext-high my-4 text-center text-lg font-bold">
 		எட்டு வரிகள், மூன்று வார்த்தைகள்
 	</h2>
 	<div class="mt-4 flex flex-wrap justify-center gap-4 py-4">
@@ -110,8 +127,10 @@
 	</div>
 </div>
 <!-- <hr class="text-text-gray" /> -->
-<div class="mt-16 bg-container dark:bg-dcontainer p-4 rounded-2xl fade-in">
-	<h2 class="baloo text-text-high dark:text-dtext-high text-center text-lg my-4  font-bold">மற்றயவை</h2>
+<div class="bg-container dark:bg-dcontainer fade-in mt-16 rounded-2xl p-4">
+	<h2 class="baloo text-text-high dark:text-dtext-high my-4 text-center text-lg font-bold">
+		மற்றயவை
+	</h2>
 	<div class="mt-4 flex flex-wrap justify-center gap-4 py-4">
 		{#each songs.more_than_3_words as song}
 			<Song {song} />
