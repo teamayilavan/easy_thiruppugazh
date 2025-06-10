@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ShareButtons from "$lib/components/ShareButtons.svelte";
 	let { data } = $props();
 	let song_data = data.data;
 </script>
@@ -93,6 +94,9 @@
 		{/if}
 	</div>
 </div>
+
+<ShareButtons />
+
 
 <a class="bg-accent hover:bg-dcard mx-auto mt-12 block w-72 rounded-md px-4 py-2" href="/">
 	<div class="flex align-middle gap-2 items-center">
