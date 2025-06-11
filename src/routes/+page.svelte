@@ -30,6 +30,7 @@
 			பாடுவது என்பன கொடுத்துள்ளோம்."
 	/>
 	<meta property="og:image" content={cardImage} />
+	<meta property="og:url" content="https://chinnathiruppugazh.ayilavan.org" />
 </svelte:head>
 
 <div class="intro mx-auto mt-12 grid max-w-3xl gap-4 text-sm md:text-xl">
