@@ -3,7 +3,6 @@
 	import ShareButtons from '$lib/components/ShareButtons.svelte';
 	let { data } = $props();
 	let song_data = data.data;
-	
 </script>
 
 <svelte:head>
@@ -79,31 +78,38 @@
 	</div>
 </div>
 
-<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
-	<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">பொருளுரை</p>
-
-	<div class="text-text dark:text-dtext mt-4 leading-8">
-		{#if song_data.porul}
-			<p>{song_data.porul}</p>
-		{:else}
-			<p>மன்னிக்கவும்! இந்த பாடலுக்கான பொருளுரை தற்போது கிடைக்க பெறவில்லை!</p>
-		{/if}
+{#if song_data.words}
+	<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
+		<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">சொற்கள்</p>
+		<div class="text-text dark:text-dtext mt-4 grid gap-1">
+			{#each song_data.words as line, index}
+				<p>{index+1}. {line}</p>
+			{/each}
+		</div>
 	</div>
-</div>
+{/if}
 
-<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
-	<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">விளக்கவுரை</p>
+{#if song_data.porul}
+	<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
+		<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">பொருளுரை</p>
 
-	<div class="text-text dark:text-dtext mt-4">
-		{#if song_data.explanation}
+		<div class="text-text dark:text-dtext mt-4 leading-8">
+			<p>{song_data.porul}</p>
+		</div>
+	</div>
+{/if}
+
+{#if song_data.explanation}
+	<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
+		<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">விளக்கவுரை</p>
+
+		<div class="text-text dark:text-dtext mt-4">
 			{#each song_data.explanation as line}
 				<p>line</p>
 			{/each}
-		{:else}
-			<p>மன்னிக்கவும்! இந்த பாடலுக்கான விளக்கவுரை தற்போது கிடைக்க பெறவில்லை!</p>
-		{/if}
+		</div>
 	</div>
-</div>
+{/if}
 
 <ShareButtons />
 
