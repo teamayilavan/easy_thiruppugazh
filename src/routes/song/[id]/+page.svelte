@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import ShareButtons from '$lib/components/ShareButtons.svelte';
-	import { cardImage } from '$lib/assets/OG_Card_Image.png';
+	import  cardImage from '$lib/assets/OG_Card_Image.png';
 	let { data } = $props();
 	let song_data = data.data;
 	
