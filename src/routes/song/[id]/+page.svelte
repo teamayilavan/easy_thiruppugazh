@@ -1,8 +1,10 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import ShareButtons from '$lib/components/ShareButtons.svelte';
 	import { cardImage } from '$lib/assets/OG_Card_Image.png';
 	let { data } = $props();
 	let song_data = data.data;
+	
 </script>
 
 <svelte:head>
@@ -23,6 +25,7 @@
 		content={`${song_data.thalam} திருத்தலத்தில் அருளப்பெற்ற திருப்புகழ் பாடல் ${song_data.title}`}
 	/>
 	<meta property="og:image" content={cardImage} />
+	<meta property="og:url" content={`https://chinnathiruppugazh.ayilavan.org/${page.url.pathname}`} />
 </svelte:head>
 
 <div class="fly-in mt-12">
