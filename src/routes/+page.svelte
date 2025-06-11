@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Song from '$lib/components/Song.svelte';
-	import { cardImage } from '$lib/assets/OG_Card_Image.png';
+	import cardImage from '$lib/assets/OG_Card_Image.png';
 
 	import { fade } from 'svelte/transition';
 	import type { PageProps } from './$types';
