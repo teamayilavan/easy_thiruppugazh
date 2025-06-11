@@ -1,7 +1,5 @@
 <script lang="ts">
 	import Song from '$lib/components/Song.svelte';
-	import cardImage from '$lib/assets/OG_Card_Image.png';
-
 	import { fade } from 'svelte/transition';
 	import type { PageProps } from './$types';
 	let { data }: PageProps = $props();
@@ -29,7 +27,7 @@
 			வலைத்தளத்தில் வழங்கியுள்ளோம். பாடல்களுக்கு பொருளுரை, விளக்கவுரை மற்றும் இசை வடிவில் எவ்வாறு
 			பாடுவது என்பன கொடுத்துள்ளோம்."
 	/>
-	<meta property="og:image" content={cardImage} />
+	<meta property="og:image" content="https://chinnathiruppugazh.ayilavan.org/og_card.png" />
 	<meta property="og:url" content="https://chinnathiruppugazh.ayilavan.org" />
 </svelte:head>
 
