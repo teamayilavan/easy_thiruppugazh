@@ -25,7 +25,7 @@
 		content={`${song_data.thalam} திருத்தலத்தில் அருளப்பெற்ற திருப்புகழ் பாடல் ${song_data.title}`}
 	/>
 	<meta property="og:image" content={cardImage} />
-	<meta property="og:url" content={`https://chinnathiruppugazh.ayilavan.org/${page.url.pathname}`} />
+	<meta property="og:url" content={`https://chinnathiruppugazh.ayilavan.org${page.url.pathname}`} />
 </svelte:head>
 
 <div class="fly-in mt-12">
