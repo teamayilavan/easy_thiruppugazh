@@ -1,4 +1,6 @@
 import type { PageLoad } from './$types';
+export const prerender = true
+export const csr = false
 
 export const load: PageLoad = async ({ fetch, params }) => {
     let id = params.id

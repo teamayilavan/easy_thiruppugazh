@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chinnathiruppugazh.ayilavan.org/sitemap.xml
