@@ -9,8 +9,7 @@
 	<title>{song_data.title} | எளிய திருப்புகழ் பாடல்கள் தொகுப்பு</title>
 	<meta
 		name="description"
-		content={`${song_data.thalam} திருத்தலத்தில் அருளப்பெற்ற திருப்புகழ் பாடல் ${song_data.title}. பாடல் பொருளுரை, விளக்கவுரை மற்றும் இசை வடிவில் எவ்வாறு
-			பாடுவது என்பன கொடுத்துள்ளோம். PDF வடிவிலும் பதிவிறக்கம் செய்யமுடியும்`}
+		content={`${song_data.thalam} திருத்தலத்தில் அருளப்பெற்ற திருப்புகழ் பாடல் ${song_data.title}`}
 	/>
 	<meta
 		name="keywords"
@@ -21,8 +20,7 @@
 	<meta property="og:title" content={`${song_data.title} | எளிய திருப்புகழ் பாடல்கள் தொகுப்பு`} />
 	<meta
 		property="og:description"
-		content={`${song_data.thalam} திருத்தலத்தில் அருளப்பெற்ற திருப்புகழ் பாடல் ${song_data.title}. பாடல் பொருளுரை, விளக்கவுரை மற்றும் இசை வடிவில் எவ்வாறு
-			பாடுவது என்பன கொடுத்துள்ளோம். PDF வடிவிலும் பதிவிறக்கம் செய்யமுடியும்`}
+		content={`${song_data.thalam} திருத்தலத்தில் அருளப்பெற்ற திருப்புகழ் பாடல் ${song_data.title}`}
 	/>
 	<meta property="og:image" content="https://chinnathiruppugazh.ayilavan.org/og_card.png" />
 	<meta property="og:url" content={`https://chinnathiruppugazh.ayilavan.org${page.url.pathname}`} />
@@ -63,22 +61,19 @@
 	</div>
 </div>
 
+{#if song_data.music}
 <div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
 	<h3 class="noto text-text-high dark:text-card mt-2 text-sm font-medium">இசை</h3>
 
-	<div class="text-text dark:text-dtext mt-4">
-		{#if song_data.music}
+	<div class="text-text dark:text-dtext mt-4">		
 			<audio controls>
 				<source src="horse.ogg" type="audio/ogg" />
 				<source src="horse.mp3" type="audio/mpeg" />
 				Your browser does not support the audio element.
 			</audio>
-			<p>Music</p>
-		{:else}
-			<p>மன்னிக்கவும் இந்த பாடலுக்கான இசை தற்போது கிடைக்க பெறவில்லை!</p>
-		{/if}
 	</div>
 </div>
+{/if}
 
 {#if song_data.words}
 	<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
