@@ -9,18 +9,20 @@
 	<title>{song_data.title} | எளிய திருப்புகழ் பாடல்கள் தொகுப்பு</title>
 	<meta
 		name="description"
-		content={`${song_data.thalam} திருத்தலத்தில் அருளப்பெற்ற திருப்புகழ் பாடல் ${song_data.title}`}
+		content={`${song_data.thalam} திருத்தலத்தில் அருளப்பெற்ற திருப்புகழ் பாடல் ${song_data.title}. பாடல் பொருளுரை, விளக்கவுரை மற்றும் இசை வடிவில் எவ்வாறு
+			பாடுவது என்பன கொடுத்துள்ளோம். PDF வடிவிலும் பதிவிறக்கம் செய்யமுடியும்`}
 	/>
 	<meta
 		name="keywords"
-		content={`${song_data.title},${song_data.thalam}, திருப்புகழ், அருணகிரிநாத சுவாமிகள்,முருக பெருமான், வெற்றிவேல், சிறப்பு`}
+		content={`${song_data.title},${song_data.thalam}, திருப்புகழ், அருணகிரிநாத சுவாமிகள்,முருக பெருமான், வெற்றிவேல், சிறப்பு, easy, pdf, meaning, thiruppugazh, songs, murugan, thiruppugal`}
 	/>
 	<meta name="author" content="அயிலவன் அணி" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content={`${song_data.title} | எளிய திருப்புகழ் பாடல்கள் தொகுப்பு`} />
 	<meta
 		property="og:description"
-		content={`${song_data.thalam} திருத்தலத்தில் அருளப்பெற்ற திருப்புகழ் பாடல் ${song_data.title}`}
+		content={`${song_data.thalam} திருத்தலத்தில் அருளப்பெற்ற திருப்புகழ் பாடல் ${song_data.title}. பாடல் பொருளுரை, விளக்கவுரை மற்றும் இசை வடிவில் எவ்வாறு
+			பாடுவது என்பன கொடுத்துள்ளோம். PDF வடிவிலும் பதிவிறக்கம் செய்யமுடியும்`}
 	/>
 	<meta property="og:image" content="https://chinnathiruppugazh.ayilavan.org/og_card.png" />
 	<meta property="og:url" content={`https://chinnathiruppugazh.ayilavan.org${page.url.pathname}`} />
@@ -28,14 +30,14 @@
 
 <div class="fly-in mt-12">
 	<h1 class="noto text-text-high dark:text-card text-center text-2xl font-semibold">
-		{song_data.title}
+		திருப்புகழ் : {song_data.title}
 	</h1>
 </div>
 <div class="text-text dark:text-dtext fly-in mt-4 text-center text-sm">
-	<p>திருத்தலம் : {song_data.thalam}</p>
+	<h2>திருத்தலம் : {song_data.thalam}</h2>
 </div>
 <div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
-	<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">சந்தம்</p>
+	<h3 class="noto text-text-high dark:text-card mt-2 text-sm font-medium">சந்தம்</h3>
 
 	<div class="text-text dark:text-dtext mt-4">
 		{#each song_data.santham as santham_line}
@@ -44,7 +46,7 @@
 	</div>
 </div>
 <div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
-	<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">வரிகள்</p>
+	<h3 class="noto text-text-high dark:text-card mt-2 text-sm font-medium">வரிகள்</h3>
 	<div class="text-text dark:text-dtext mt-4 grid gap-1">
 		{#each song_data.lyrics as line}
 			<p>{line}</p>
@@ -53,7 +55,7 @@
 </div>
 
 <div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
-	<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">பதம் பிரித்தது</p>
+	<h3 class="noto text-text-high dark:text-card mt-2 text-sm font-medium">பதம் பிரித்தது</h3>
 	<div class="text-text dark:text-dtext mt-4 grid gap-1">
 		{#each song_data.patham as line}
 			<p>{line}</p>
@@ -62,7 +64,7 @@
 </div>
 
 <div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
-	<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">இசை</p>
+	<h3 class="noto text-text-high dark:text-card mt-2 text-sm font-medium">இசை</h3>
 
 	<div class="text-text dark:text-dtext mt-4">
 		{#if song_data.music}
@@ -80,10 +82,10 @@
 
 {#if song_data.words}
 	<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
-		<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">சொற்கள்</p>
+		<h3 class="noto text-text-high dark:text-card mt-2 text-sm font-medium">சொற்கள்</h3>
 		<div class="text-text dark:text-dtext mt-4 grid gap-1">
 			{#each song_data.words as line, index}
-				<p>{index+1}. {line}</p>
+				<p>{index + 1}. {line}</p>
 			{/each}
 		</div>
 	</div>
@@ -91,7 +93,7 @@
 
 {#if song_data.porul}
 	<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
-		<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">பொருளுரை</p>
+		<h3 class="noto text-text-high dark:text-card mt-2 text-sm font-medium">பொருளுரை</h3>
 
 		<div class="text-text dark:text-dtext mt-4 leading-8">
 			<p>{song_data.porul}</p>
@@ -101,11 +103,11 @@
 
 {#if song_data.explanation}
 	<div class="bg-card dark:bg-dcard fade-in mt-12 rounded-xl p-4">
-		<p class="noto text-text-high dark:text-card mt-2 text-sm font-medium">விளக்கவுரை</p>
+		<h3 class="noto text-text-high dark:text-card mt-2 text-sm font-medium">விளக்கவுரை</h3>
 
 		<div class="text-text dark:text-dtext mt-4">
 			{#each song_data.explanation as line}
-				<p>line</p>
+				<p>{line}</p>
 			{/each}
 		</div>
 	</div>

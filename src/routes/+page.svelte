@@ -12,11 +12,11 @@
 		name="description"
 		content="சிறப்பு மிக்க திருப்புகழில் படிப்பதற்கு எளிதனா திருப்புகழ் பாடல்களை தொகுத்து இந்த
 			வலைத்தளத்தில் வழங்கியுள்ளோம். பாடல்களுக்கு பொருளுரை, விளக்கவுரை மற்றும் இசை வடிவில் எவ்வாறு
-			பாடுவது என்பன கொடுத்துள்ளோம்."
+			பாடுவது என்பன கொடுத்துள்ளோம். PDF வடிவிலும் பதிவிறக்கம் செய்யமுடியும்!"
 	/>
 	<meta
 		name="keywords"
-		content="திருப்புகழ், அருணகிரிநாத சுவாமிகள்,முருக பெருமான், வெற்றிவேல், சிறப்பு"
+		content="திருப்புகழ், அருணகிரிநாத சுவாமிகள்,முருக பெருமான், வெற்றிவேல், சிறப்பு, easy, pdf, meaning, thiruppugazh, songs, murugan, thiruppugal"
 	/>
 	<meta name="author" content="அயிலவன் அணி" />
 	<meta property="og:type" content="website" />
@@ -25,7 +25,7 @@
 		property="og:description"
 		content="சிறப்பு மிக்க திருப்புகழில் படிப்பதற்கு எளிதனா திருப்புகழ் பாடல்களை தொகுத்து இந்த
 			வலைத்தளத்தில் வழங்கியுள்ளோம். பாடல்களுக்கு பொருளுரை, விளக்கவுரை மற்றும் இசை வடிவில் எவ்வாறு
-			பாடுவது என்பன கொடுத்துள்ளோம்."
+			பாடுவது என்பன கொடுத்துள்ளோம். PDF வடிவிலும் பதிவிறக்கம் செய்யமுடியும்"
 	/>
 	<meta property="og:image" content="https://chinnathiruppugazh.ayilavan.org/og_card.png" />
 	<meta property="og:url" content="https://chinnathiruppugazh.ayilavan.org" />
@@ -57,7 +57,7 @@
 </div>
 
 <div class="baloo fly-in mt-8 text-center font-medium">
-	<p>பாடல்கள்</p>
+	<h2>திருப்புகழ்</h2>
 </div>
 <div
 	class="fly-in mx-auto mt-4 flex flex-col items-center justify-center gap-2 text-center align-middle md:flex-row md:gap-5"
